@@ -1,4 +1,3 @@
-/// Declare jsPDF globally if using a CDN
 declare var jsPDF: any;
 
 function generateResume() {
@@ -78,3 +77,5 @@ document.getElementById('resume-form')?.addEventListener('keypress', (event) => 
         generateResume();
     }
 });
+
+
