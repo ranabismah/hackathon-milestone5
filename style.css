@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+#form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Generated Resume Styles */
+#generated-resume {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#generated-resume h2 {
+    text-align: center;
+    color: #333;
+}
+
+#resume-content {
+    margin-bottom: 20px;
+}
+
+#generated-resume button {
+    background-color: #FF6347;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+#generated-resume button:hover {
+    background-color: #e0533f;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #form-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #generated-resume {
+        width: 90%;
+        padding: 15px;
+    }
+}

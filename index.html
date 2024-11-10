@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Resume Builder</h1>
+
+  <!-- Form to Input Resume Details -->
+  <div id="form-container">
+    <form id="resume-form">
+      
+      <!-- Personal Information Section -->
+      <h3>Personal Information</h3>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter Full Name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter Email">
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" placeholder="Enter Phone Number">
+
+      <!-- Education Section -->
+      <h3>Education</h3>
+      <label for="education">Education (e.g., Degree, University, Year):</label>
+      <textarea id="education" placeholder="Enter Education (comma separated)"></textarea>
+
+      <!-- Skills Section -->
+      <h3>Skills</h3>
+      <label for="skills">Skills:</label>
+      <textarea id="skills" placeholder="Enter Skills (comma separated)"></textarea>
+
+      <!-- Experience Section -->
+      <h3>Experience</h3>
+      <label for="experience">Work Experience:</label>
+      <textarea id="experience" placeholder="Enter Work Experience"></textarea>
+
+      <button type="button" onclick="generateResume()">Generate Resume</button>
+    </form>
+  </div>
+
+  <!-- Display Generated Resume -->
+  <div id="generated-resume" style="display:none;">
+    <h2>Generated Resume</h2>
+    <div id="resume-content">
+      <!-- Resume Content Will Appear Here -->
+    </div>
+    <button onclick="editResume()">Edit Resume</button>
+    <button onclick="downloadPDF()">Download as PDF</button>
+  </div>
+
+  <!-- Include jsPDF Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
